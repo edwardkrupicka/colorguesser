@@ -48,12 +48,12 @@ module.exports= {
 				type: 'asset/resource'
 			}
 		]
-	}
-	// plugins: [
-	// 	new HtmlWebpackPlugin({
-	// 		title: 'WebPack App',
-	// 		filename: 'index.html',
-	// 		template: 'src/template.html',
-	// 	})
-	// ]
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			title: 'WebPack App',
+			filename: 'index.html',
+			template: 'src/index.html',
+		})
+	]
 }
