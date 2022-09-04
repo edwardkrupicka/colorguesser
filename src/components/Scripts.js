@@ -8,7 +8,6 @@ class Scripts {
 	}
 	
 	createRgbCode() {
-		// rgbCode.innerHTML = `rgb(${generateRgbNum()}, ${generateRgbNum()}, ${generateRgbNum()})`
 		return `rgb(${this.generateRgbNum()}, ${this.generateRgbNum()}, ${this.generateRgbNum()})`
 	}
 

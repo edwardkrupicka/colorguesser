@@ -1,4 +1,4 @@
-import Scripts from './Scripts';
+import Scripts from './scripts';
 
 let scripts = new Scripts
 
