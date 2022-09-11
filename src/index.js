@@ -19,6 +19,8 @@ let player = new Player;
 let game = new Game;
 let cells = [cell1, cell2, cell3, cell4, cell5, cell6]
 
+console.log(player.score == '3')
+
 
 
 const randomizeGridColors = () => {
@@ -36,16 +38,16 @@ const clickGrid = (event) => {
 	event.preventDefault();
 	let backgroundColor = event.target.style.backgroundColor
 
-	if(backgroundColor === rgbCode.innerHTML) {
+	if(backgroundColor === rgbCode.innerHTML && event.target.className === 'cell') {
 		player.updateScore()
 		player.savePlayerToStorage(player)
 		console.log(rgbCode)
 		initializePage()
 		event.target = game.grid[event.target.id]
-
+		
 	}
 
-	if(backgroundColor !== rgbCode.innerHTML) {
+	if(backgroundColor !== rgbCode.innerHTML && event.target.className === 'cell') {
 		event.target.style.backgroundColor = '#00000000';
 	}
 
